@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/61ac1ba56f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Boot Strap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.css" />
+
+    <!-- css main-->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Work10 | details</title>
+  </head>
+  <!-- start here -->
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark p-1">
+      <div class="container">
+        <!-- Life Side Navber -->
+        <a href="index.html" class="navbar-brand">Blogen</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--UL Navbar -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!-- ul 1 -->
+          <ul class="navbar-nav">
+            <li class="nav-item px-2 ml-2">
+              <a href="index.html" class="nav-link">Dashborad</a>
+            </li>
+            <li class="nav-item px-2 ml-2">
+              <a href="posts.html" class="nav-link">Posts</a>
+            </li>
+            <li class="nav-item px-2 ml-2">
+              <a href="categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item px-2 ml-2">
+              <a href="users.html" class="nav-link">Users</a>
+            </li>
+          </ul>
+          <!-- ul 2 -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown mr-4">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                <i class="fas fa-user"></i> Welcome Vicha
+              </a>
+              <div class="dropdown-menu">
+                <!-- 1 -->
+                <a href="profile.html" class="dropdown-item">
+                  <i class="fas fa-user-circle"></i> Profile
+                </a>
+                <hr />
+                <!-- 2 -->
+                <a href="setting.html" class="dropdown-item">
+                  <i class="fas fa-cog"></i> Setting
+                </a>
+                <hr />
+                <!-- 3 -->
+                <a href="index.html" class="dropdown-item">
+                  <i class="fas fa-info-circle"></i> Help
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">
+                <i class="fas fa-sign-in-alt"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="main-header" class="bg-primary text-white py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Post One</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Actions Button -->
+    <section id="actions" class="bg-light py-4 mb-4">
+      <div class="container">
+        <div class="row">
+          <!-- 1 -->
+          <div class="col-md-3">
+            <a href="index.html" class="btn btn-dark btn-block">
+              <i class="fas fa-arrow-left mr-2"></i>
+              Back To Dashboard
+            </a>
+          </div>
+          <!-- 2 -->
+          <div class="col-md-3">
+            <a href="index.html" class="btn btn-success btn-block">
+              <i class="fas fa-check mr-2"></i>
+              Save Changes
+            </a>
+          </div>
+          <!-- 3 -->
+          <div class="col-md-3">
+            <a href="index.html" class="btn btn-danger btn-block">
+              <i class="fas fa-trash mr-2"></i>
+              Delete Post
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details -->
+    <section id="details">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h4>Edit Post</h4>
+              </div>
+              <div class="card-body">
+                <form action="">
+                  <!-- head  -->
+                  <div class="form-group">
+                    <label for="title">Title</label>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="form-control"
+                      value="Post One"
+                    />
+                  </div>
+                  <!-- select & option -->
+                  <div class="form-group">
+                    <label for="category">Category</label>
+                    <select name="" id="" class="form-control">
+                      <option value="" selected>Web Development</option>
+                      <option value="">Tech Gadgets</option>
+                      <option value="">Business</option>
+                      <option value="">Health & Wellness</option>
+                    </select>
+                  </div>
+                  <!-- choose image -->
+                  <div class="form-group">
+                    <label for="image">Upload Image</label>
+                    <div class="custom-file">
+                      <input
+                        id="image"
+                        class="custom-file-input"
+                        type="file"
+                        name=""
+                      />
+                      <label for="image" class="custom-file-label"
+                        >Choose File</label
+                      >
+                    </div>
+                    <small class="form-text text-muted">Max Size 3Mb</small>
+                  </div>
+                  <!-- body -->
+                  <div class="form-group">
+                    <label for="body">Body</label>
+                    <textarea class="form-control" name="editor1">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facilis, blanditiis nostrum quisquam, laboriosam tempora aliquid repellendus velit error nulla quia exercitationem soluta. Amet suscipit possimus quo fuga et beatae velit cupiditate voluptates quam, dicta voluptatibus? Tenetur culpa sequi totam libero eveniet harum reiciendis officia ratione quod laboriosam. Quis, inventore!</textarea
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="main-footer" class="bg-dark text-white mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="lead text-center">
+              Copyright &copy; <span id="year"></span>
+              Vicha Pratu
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- J Query -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- js bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CDN ckediter -->
+    <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+
+    <!-- js main -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
